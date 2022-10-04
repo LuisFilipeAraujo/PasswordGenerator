@@ -10,12 +10,20 @@
     <script scr="js/app.js" defer></script>
 </head>
     <h1>PASSWORD GENERATOR</h1>
+
     <main class="container-input">
         <span>Tamanho<span id="valor"></span> caracteres</span>
         <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
 
-        <button>Gerar Senha</button>
+        <button id="button" class="button-cta">Generate Password</button>
     </main>
+
+<div id="container-password" class="container-password hide">
+    <span class="title">Password Generated: </span>
+    <span id="password">123123123</span>
+    <span>Click to copy! 👆</span>
+</div>
+
 <body>
     
 </body>
