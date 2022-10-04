@@ -14,12 +14,7 @@
     align-items: center;
     flex-direction: column;
   }
-  
-  .logo{
-    max-width: 600px;
-    margin-bottom: 24px;
-  }
-  
+
   .container-input{
     max-width: 480px;
     margin: 14px 0;
