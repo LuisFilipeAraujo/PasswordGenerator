@@ -11,24 +11,24 @@ let novaSenha = " ";
 
 sizePassword.innerHTML = sliderElement.value;
 
-slider.oninput =()=>{
-    sizePassword.innerHTML = this.value;
-  }
+slider.oninput = function(){
+  sizePassword.innerHTML = this.value;
+  };
 
-generatePassword=()=>{
-    let pass = '';
+function generatePassword(){
+  let pass = '';
     for(let i = 0, n = charset.length; i < sliderElement.value; ++i){
       pass += charset.charAt(Math.floor(Math.random() * n));
-    }
+  }
     
     console.log(pass)
     containerPassword.classList.remove("hide");
     password.innerHTML = pass;
     novaSenha = pass;
-  }
+  };
   
 
-copyPassword=()=>{
-    alert("Senha copiada com sucesso!")
-    navigator.clipboard.writeText(novaSenha);
-}
+function copyPassword(){
+  alert("Senha copiada com sucesso!")
+  navigator.clipboard.writeText(novaSenha);
+};
