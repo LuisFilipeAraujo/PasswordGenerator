@@ -13,22 +13,23 @@
 
 </head>
 
+<body>
+    
     <h1 class="title">PASSWORD GENERATOR</h1>
 
     <div class="container-input">
-        <span>Drag to change size of<span id="valor"></span> characters</span>
-        <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
+        <span>Drag to change size: <span id="valor"></span> characters</span>
+ <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
 
-        <button id="button" class="button-cta">Generate Password</button>
+    <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
     </div>
 
-    <div id="container-password" class="container-password hide">
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
         <span class="title">Password Generated: </span>
-        <span id="password">123123123</span>
-        <span class="tootip">Click to copy! 👆</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">Click to copy! 👆</span>
     </div>
 
-<body>
-    
 </body>
+
 </html>
