@@ -7,13 +7,13 @@ let password = document.querySelector("#password");
 let containerPassword = document.querySelector("#container-password");
 
 let charset = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789,.;?!@#$%&*()-_=+{[}]/|<>:";
-let novaSenha = " ";
+let novaSenha = '';
 
 sizePassword.innerHTML = sliderElement.value;
 
 slider.oninput = function(){
   sizePassword.innerHTML = this.value;
-  };
+};
 
 function generatePassword(){
   let pass = '';
